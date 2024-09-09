@@ -14,8 +14,8 @@ class BooksAction extends StatelessWidget {
           textColor: Colors.black,
           backgroundColor: Colors.white,
           borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(24),
-            bottomLeft: Radius.circular(24),
+            topLeft: Radius.circular(18),
+            bottomLeft: Radius.circular(18),
           ),
         ),
         CustomButton(
@@ -24,8 +24,8 @@ class BooksAction extends StatelessWidget {
           textColor: Colors.white,
           backgroundColor: Colors.redAccent,
           borderRadius: BorderRadius.only(
-            topRight: Radius.circular(24),
-            bottomRight: Radius.circular(24),
+            topRight: Radius.circular(18),
+            bottomRight: Radius.circular(18),
           ),
         ),
       ],
