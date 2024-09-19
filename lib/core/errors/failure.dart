@@ -21,7 +21,7 @@ class ServerFailure extends Failure {
         return ServerFailure('Bad Certificate');
       case DioExceptionType.badResponse:
         return ServerFailure.fromResponse(
-            dioException.response!.statusCode!, dioException.response!.data);
+            dioException.response!.statusCode, dioException.response!.data);
       case DioExceptionType.cancel:
         return ServerFailure('Request To Api Server Was Canceled');
       case DioExceptionType.connectionError:
@@ -37,7 +37,7 @@ class ServerFailure extends Failure {
     }
   }
 
-  factory ServerFailure.fromResponse(int statusCode, dynamic response) {
+  factory ServerFailure.fromResponse(int? statusCode, dynamic response) {
     if (statusCode == 400 || statusCode == 401 || statusCode == 403) {
       return ServerFailure(response['error']['message']);
     } else if (statusCode == 404) {
