@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:bookly_app/core/widgets/custom_error_message.dart';
 import 'package:bookly_app/core/widgets/custom_loading_indicator.dart';
 import 'package:bookly_app/features/home/presentation/manager/featured_books_cubit/featured_books_cubit.dart';
